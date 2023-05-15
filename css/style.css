@@ -1,0 +1,103 @@
+
+*
+{padding: 0px;
+margin: 0px;}
+
+html
+{font-size: 62,5%;}
+
+body
+{background-color: rgb(13, 13, 13);}
+
+#preload
+{width: 100%;
+height: 100vh;}
+
+#preload img
+{position: absolute;
+width: 80px;
+height: auto;
+top: 0px;
+bottom: 0px;
+right: 0px;
+left: 0px;
+margin: auto;
+animation: pulsacao ease-in-out 500ms infinite;}
+
+@keyframes pulsacao {
+    
+    0% {
+        scale: 1;
+    }
+
+    100%{
+        scale: 1.2;
+    }
+
+}
+
+
+
+header
+{height: 7%;
+width: 100%;
+background-color: rgb(13, 13, 13);}
+
+ul
+{display: flex;
+color: white;
+font-family: 'Kanit', sans-serif;
+font-size: 2rem;
+margin: 18px;
+margin-left: 50px;}
+
+li
+{list-style: none;
+margin-right: 250px;}
+
+header button 
+{width: 50px;
+height: auto;}
+
+
+
+
+.container
+{display: flex;
+width: 100%;
+height: 90%;}   
+
+.fundo-lateral
+{position: fixed;
+text-align: center;
+width: 40%;
+height: 100%;
+background-image: url(../IMG/fundo\ lateral.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;}
+
+.fundo-lateral h1
+{font-family: 'Kanit', sans-serif;
+color: white;
+padding-top: 250px;
+font-size: 8rem;}
+
+.fundo-lateral h2
+{font-family: 'Pacifico', cursive;
+color: white;
+font-size: 2rem;}
+
+
+
+
+
+.conteudo
+{width: 60%;
+position: absolute;
+right: 0px;}
+
+.slider
+{width: 100%;
+height: 400px;
+background-color: rgb(255, 255, 255);}
