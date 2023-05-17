@@ -4,14 +4,16 @@
 margin: 0px;}
 
 html
-{font-size: 62,5%;}
+{font-size: 62,5%;
+scroll-behavior: smooth;}
 
 body
-{background-color: rgb(13, 13, 13);}
+{background-color: rgb(255, 255, 255);}
 
 #preload
 {width: 100%;
-height: 100vh;}
+height: 100vh;
+background-color: rgb(17, 84, 70);}
 
 #preload img
 {position: absolute;
@@ -38,34 +40,15 @@ animation: pulsacao ease-in-out 500ms infinite;}
 
 
 
-header
-{height: 7%;
-width: 100%;
-background-color: rgb(13, 13, 13);}
-
-ul
-{display: flex;
-color: white;
-font-family: 'Kanit', sans-serif;
-font-size: 2rem;
-margin: 18px;
-margin-left: 50px;}
-
-li
-{list-style: none;
-margin-right: 250px;}
-
-header button 
-{width: 50px;
-height: auto;}
-
-
-
 
 .container
 {display: flex;
 width: 100%;
-height: 90%;}   
+height: 100vh;}   
+
+
+
+
 
 .fundo-lateral
 {position: fixed;
@@ -97,7 +80,125 @@ font-size: 2rem;}
 position: absolute;
 right: 0px;}
 
+.cabecalho
+{width: 100%;
+height: 100px;
+background-color: rgb(17, 84, 70);}
+
+ul
+{width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+text-align: center;}
+
+li
+{width: 20%;
+margin-left: 10px;
+color: white;
+list-style: none;
+font-family: 'Kanit', sans-serif;
+font-size: 1.4rem;
+cursor: pointer;
+padding-top: 30px;
+padding-bottom: 30px;
+transition: 80ms;}
+
+li:hover
+{border-bottom: solid 6px rgb(198, 102, 23);
+color: rgb(198, 102, 23);}
+
+
+
+
 .slider
 {width: 100%;
 height: 400px;
-background-color: rgb(255, 255, 255);}
+background-color: rgb(154, 154, 154);
+position: relative;}
+
+.navegadores
+{position: absolute;
+width: 100px;
+height: 30px;
+align-items: center;
+text-align: center;
+bottom: 10px;
+right: 0px;
+left: 0px;
+margin: auto;}
+
+.navegadores button
+{padding: 8px;
+border-radius: 100%;
+transition: 200ms;
+border: solid white 2px;
+background: none;}
+
+.navegadores button:hover
+{background-color: rgb(92, 42, 0);
+border: solid 2px rgb(92, 42, 0);}
+
+
+
+
+
+.tipos-cafe
+{display: flex;
+width: 100%;
+height: 400px;
+background-color: rgb(17, 84, 70);
+align-items: center;
+justify-content: center;
+position: relative;}
+
+
+
+
+.seletores
+{position: absolute;
+display: flex;
+justify-content: center;
+width: 80%;
+height: 40px;
+top: 0px;}
+
+.seletores div
+{width: 45%;
+height: 100%;
+padding-top: 10px;
+text-align: center;
+margin-left: 5px;
+margin-right: 5px;
+cursor: pointer;
+background-color: white;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+color: rgb(17, 84, 70);
+font-size: 1.2rem;
+font-family: 'Kanit', sans-serif;
+transition: 200ms;}
+
+.seletores div:hover
+{background-color: rgb(223, 223, 223);}
+
+
+
+
+.card1, .card2, .card3
+{width: 30%;
+height: 50%;
+margin: 10px;
+background-color: rgb(233, 233, 233);;
+text-align: center;}
+
+.tipos-cafe img 
+{width: 120px;
+height: auto;}
+
+.tipos-cafe h1
+{font-family: 'Kanit', sans-serif;
+font-size: 1.2rem;
+margin-top: 20px;
+margin-bottom: 10px;
+color: rgb(92, 42, 0);}
