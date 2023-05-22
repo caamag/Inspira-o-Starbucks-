@@ -5,7 +5,8 @@ margin: 0px;}
 
 html
 {font-size: 62,5%;
-scroll-behavior: smooth;}
+scroll-behavior: smooth;
+transition: 500ms;}
 
 body
 {background-color: rgb(255, 255, 255);}
@@ -13,7 +14,7 @@ body
 #preload
 {width: 100%;
 height: 100vh;
-background-color: rgb(17, 84, 70);}
+background-color: rgb(16, 68, 72);}
 
 #preload img
 {position: absolute;
@@ -55,7 +56,7 @@ height: 100vh;}
 text-align: center;
 width: 40%;
 height: 100%;
-background-image: url(../IMG/fundo\ lateral.jpg);
+background-image: url(../IMG/copo\ verde.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: 100%;}
@@ -63,13 +64,8 @@ background-size: 100%;}
 .fundo-lateral h1
 {font-family: 'Kanit', sans-serif;
 color: white;
-padding-top: 250px;
+padding-top: 380px;
 font-size: 8rem;}
-
-.fundo-lateral h2
-{font-family: 'Pacifico', cursive;
-color: white;
-font-size: 2rem;}
 
 
 
@@ -78,12 +74,13 @@ font-size: 2rem;}
 .conteudo
 {width: 60%;
 position: absolute;
-right: 0px;}
+right: 0px;
+box-shadow: -10px 0px 25px -5px rgba(0, 0, 0, 0.65);}
 
 .cabecalho
 {width: 100%;
 height: 100px;
-background-color: rgb(17, 84, 70);}
+background-color: rgb(16, 68, 72);}
 
 ul
 {width: 100%;
@@ -105,17 +102,36 @@ padding-bottom: 30px;
 transition: 80ms;}
 
 li:hover
-{border-bottom: solid 6px rgb(198, 102, 23);
-color: rgb(198, 102, 23);}
+{border-bottom: solid 6px rgb(223, 204, 179);
+color: rgb(223, 204, 179);}
 
 
 
 
-.slider
+
+.slide1
 {width: 100%;
 height: 400px;
-background-color: rgb(154, 154, 154);
-position: relative;}
+background-image: url(../IMG/slide1.png);
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center;
+position: relative;
+transition: 800ms;}
+
+.slide2
+{width: 100%;
+height: 400px;
+background-color: rgb(34, 128, 96);
+position: relative;
+transition: 800ms;}
+
+.slide3
+{width: 100%;
+height: 400px;
+background-color: rgb(6, 35, 83);
+position: relative;
+transition: 800ms;}
 
 .navegadores
 {position: absolute;
@@ -131,13 +147,13 @@ margin: auto;}
 .navegadores button
 {padding: 8px;
 border-radius: 100%;
-transition: 200ms;
-border: solid white 2px;
+transition: 250ms;
+border: solid rgb(16, 68, 72) 2px;
 background: none;}
 
 .navegadores button:hover
-{background-color: rgb(92, 42, 0);
-border: solid 2px rgb(92, 42, 0);}
+{background-color: rgb(16, 68, 72);
+border: solid 2px rgb(16, 68, 72);}
 
 
 
@@ -147,12 +163,21 @@ border: solid 2px rgb(92, 42, 0);}
 {display: flex;
 width: 100%;
 height: 400px;
-background-color: rgb(17, 84, 70);
+background-color: rgb(250, 250, 250);
 align-items: center;
 justify-content: center;
 position: relative;}
 
+.tipos-cafe img 
+{width: 120px;
+height: auto;}
 
+.tipos-cafe h1
+{font-family: 'Kanit', sans-serif;
+font-size: 1.2rem;
+margin-top: 20px;
+margin-bottom: 10px;
+color: rgb(16, 68, 72);}
 
 
 .seletores
@@ -171,16 +196,16 @@ text-align: center;
 margin-left: 5px;
 margin-right: 5px;
 cursor: pointer;
-background-color: white;
+background-color: rgb(16, 68, 72);
 border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
-color: rgb(17, 84, 70);
+color: white;
 font-size: 1.2rem;
 font-family: 'Kanit', sans-serif;
 transition: 200ms;}
 
 .seletores div:hover
-{background-color: rgb(223, 223, 223);}
+{background-color: rgb(28, 106, 111);}
 
 
 
@@ -189,16 +214,45 @@ transition: 200ms;}
 {width: 30%;
 height: 50%;
 margin: 10px;
-background-color: rgb(233, 233, 233);;
+background-color: rgb(238, 232, 232);
+border: solid 4px rgb(16, 68, 72);
 text-align: center;}
 
-.tipos-cafe img 
-{width: 120px;
+
+
+
+
+
+
+
+.cafe-sobre
+{display: flex;
+width: 100%;
+height: 400px;
+background-color: rgb(250, 250, 250);}
+
+.cafe-sobre div
+{width: 50%;
+height: 100%;
+margin-top: 20px;}
+
+.cafe-sobre img
+{width: 100%;
 height: auto;}
 
-.tipos-cafe h1
-{font-family: 'Kanit', sans-serif;
-font-size: 1.2rem;
+.cafe-sobre h1
+{font-size: 3rem;
+text-align: left;
+margin-left: 40px; 
 margin-top: 20px;
-margin-bottom: 10px;
-color: rgb(92, 42, 0);}
+color: rgb(16, 68, 72);
+font-family: 'Kanit', sans-serif;}
+
+.cafe-sobre p
+{font-size: 1rem;
+text-align: left;
+margin-left: 40px; 
+margin-top: 30px;
+color: rgb(16, 68, 72);
+font-family: 'Kanit', sans-serif;
+text-indent: 20px;}

@@ -20,6 +20,36 @@ getPreload();
 
 
 
+//Slider principal (manual)
+
+
+const btn1 = document.querySelector('.btn1'); 
+const btn2 = document.querySelector('.btn2'); 
+const btn3 = document.querySelector('.btn3');
+
+const carrossel = document.querySelector('.slide1'); 
+
+
+document.addEventListener('click', (e) => {
+
+    const elemento = e.target; 
+
+    if(elemento.classList.contains('btn1')) {
+        carrossel.classList = 'slide1'
+    } else if (elemento.classList.contains('btn2')) {
+        carrossel.classList = 'slide2'
+    } else if (elemento.classList.contains('btn3')) {
+        carrossel.classList = 'slide3'
+    }
+
+})
+
+
+
+
+
+
+
 
 //Seletores para cafés frios e gelados:
 
@@ -40,20 +70,20 @@ quente.addEventListener('click', () => {
     texto2.innerHTML = 'Capuccino'; 
     texto3.innerHTML = 'Expresso'; 
 
-    card1.src = './IMG/café-tradicional.png'; 
-    card2.src = './IMG/capuccino.png'; 
-    card3.src = './IMG/café-expresso.png'; 
+    card1.src = './IMG/xicara-de-cafe.png'; 
+    card2.src = './IMG/cappuccino.png'; 
+    card3.src = './IMG/maquina-de-cafe.png'; 
 
 })
 
 gelado.addEventListener('click', () => {
-    texto1.innerHTML = 'seila'; 
-    texto2.innerHTML = 'seila2'; 
-    texto3.innerHTML = 'seila3'; 
+    texto1.innerHTML = 'Frappuccino'; 
+    texto2.innerHTML = 'Ice cream'; 
+    texto3.innerHTML = 'Gelado cremoso'; 
 
-    card1.src = './IMG/capuccino.png'; 
-    card2.src = './IMG/capuccino.png'; 
-    card3.src = './IMG/capuccino.png'; 
+    card1.src = './IMG/café gelado.png'; 
+    card2.src = './IMG/ice cream.png'; 
+    card3.src = './IMG/milkshake.png'; 
 
 })
 
