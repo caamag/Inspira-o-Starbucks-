@@ -47,7 +47,9 @@ animation: pulsacao ease-in-out 500ms infinite;}
 width: 100%;
 height: 100vh;}   
 
-
+a
+{text-decoration: none;
+color: white;}
 
 
 
@@ -216,7 +218,11 @@ height: 50%;
 margin: 10px;
 background-color: rgb(238, 232, 232);
 border: solid 4px rgb(16, 68, 72);
-text-align: center;}
+text-align: center;
+transition: all ease-in-out 150ms;}
+
+.card1:hover, .card2:hover, .card3:hover
+{background-color: rgb(218, 209, 209);}
 
 
 
@@ -256,3 +262,49 @@ margin-top: 30px;
 color: rgb(16, 68, 72);
 font-family: 'Kanit', sans-serif;
 text-indent: 20px;}
+
+
+
+
+
+.capsulas
+{width: 100%;
+height: 400px;
+display: flex;}
+
+.cap1
+{width: 40%;
+height: 100%;
+margin-left: 40px;}
+
+.cap2
+{width: 60%;
+height: 100%;}
+
+.capsulas img
+{height: 100%;
+width: auto;
+opacity: 0.7;
+transition: all ease-in-out 200ms;}
+
+.capsulas img:hover
+{opacity: 1;}
+
+.capsulas h1
+{font-size: 3rem;
+text-align: right;
+margin-right: 40px;
+margin-top: 30px;
+color: rgb(16, 68, 72);
+font-family: 'Kanit', sans-serif;}
+
+.capsulas p
+{font-size: 1rem;
+text-align: right;
+margin-right: 40px; 
+margin-top: 30px;
+color: rgb(16, 68, 72);
+font-family: 'Kanit', sans-serif;
+text-indent: 20px;}
+
+
