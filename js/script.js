@@ -12,7 +12,7 @@ function getPreload () {
         preloader.style.display = 'none'; 
         container.style.display = 'block';
 
-    }, 0)
+    }, 3500)
 
 }
 
