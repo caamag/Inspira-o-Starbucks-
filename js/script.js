@@ -79,7 +79,7 @@ quente.addEventListener('click', () => {
 gelado.addEventListener('click', () => {
     texto1.innerHTML = 'Frappuccino'; 
     texto2.innerHTML = 'Ice cream'; 
-    texto3.innerHTML = 'Gelado cremoso'; 
+    texto3.innerHTML = 'Cremoso'; 
 
     card1.src = './IMG/café gelado.png'; 
     card2.src = './IMG/ice cream.png'; 
